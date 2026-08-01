@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Honk:MORF@15&family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Michroma&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Tagesschrift&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=VT323&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Honk:MORF@15&family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Michroma&family=Oregano:ital@0;1&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Tagesschrift&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=VT323&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+        --fonte-padrao: 'Arial, helvetica, sans-serif';
+        --fonte-mao: 'Oregano, arial, arial,  sans-serif';
+        --font-especial: 'Passion One, arial, sans-serif';
+
+
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body{
+    background-color: black;
+    min-width: 100vh;
+    font-family: var(--fonte-padrao);
+}
+
+header{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-size: 5vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte-especial);
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    min-width: 100%;
+}
+
+section{
+    font-size: 2.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-mao);
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: gray;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 1px 0px black;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+#img02{
+    background-image: url('imagens/background002.jpg');
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
