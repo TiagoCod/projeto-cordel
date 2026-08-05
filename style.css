@@ -1,13 +1,15 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Honk:MORF@15&family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Michroma&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Tagesschrift&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=VT323&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Honk:MORF@15&family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Michroma&family=Oregano:ital@0;1&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Tagesschrift&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=VT323&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Goldman:wght@400;700&family=Honk:MORF@15&family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Michroma&family=Oregano:ital@0;1&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Tagesschrift&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=VT323&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Goldman:wght@400;700&family=Honk:MORF@15&family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Michroma&family=Momo+Signature&family=Oregano:ital@0;1&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Tagesschrift&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=VT323&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 :root{
         --fonte-padrao: 'Arial, helvetica, sans-serif';
-        --fonte-mao: 'Oregano, arial, arial,  sans-serif';
+        --fonte-mao: 'Caveat, arial, sans-serif';
         --font-especial: 'Passion One, arial, sans-serif';
 
 
@@ -59,6 +61,7 @@ main{
     padding: 20px;
     margin: auto;
     min-width: 100%;
+    max-width: max-content;
 }
 
 section{
@@ -86,12 +89,18 @@ section.imagem{
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
+    font-family: 'Momo Signature';
+    font-weight: normal;
     padding: 5px;
     text-shadow: 2px 1px 0px black;
 }
 
 section > p{
+    font-family: 'Caveat';
+    font-weight: bold;
     padding-bottom: 2em;
+    font-size: 1.4em;
+    line-height: 1.6em;
 }
 
 #img01{
@@ -103,6 +112,15 @@ section > p{
 #img02{
     background-image: url('imagens/background002.jpg');
 
+}
+
+a::after{
+    content: ' 🔗';
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    color: rgb(85, 225, 230);
 }
 
 footer{
